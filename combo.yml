@@ -1,0 +1,5 @@
+# Generated from the combos section of randomcontainers/tesseract package.yml by randomcontainers/ci.
+# Do not edit; change package.yml in randomcontainers/tesseract instead.
+name: tesseract-poppler
+owner: tesseract
+with: [poppler]
