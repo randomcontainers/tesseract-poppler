@@ -12,7 +12,7 @@ These are unofficial builds, not affiliated with or endorsed by the upstream pro
 docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" ghcr.io/randomcontainers/tesseract-poppler page.png page
 ```
 
-The same images can also be pulled as `randomcontainers.com/tesseract-poppler`. The examples in the [tesseract README](https://github.com/randomcontainers/tesseract#readme) work with this image too.
+The examples in the [tesseract README](https://github.com/randomcontainers/tesseract#readme) work with this image too.
 
 ## Tags
 
