@@ -58,7 +58,7 @@ gh attestation verify oci://ghcr.io/randomcontainers/tesseract-poppler:latest \
   --repo randomcontainers/tesseract-poppler --signer-repo randomcontainers/ci
 ```
 
-Each image also has a keyless cosign signature from the same workflow, for admission controllers that check cosign signatures:
+Images published since November 2026 also have a keyless cosign signature from the same workflow, for admission controllers that check cosign signatures. Tags last built before then have only the attestation.
 
 ```sh
 cosign verify ghcr.io/randomcontainers/tesseract-poppler:latest \
@@ -67,7 +67,7 @@ cosign verify ghcr.io/randomcontainers/tesseract-poppler:latest \
   --certificate-github-workflow-repository randomcontainers/tesseract-poppler
 ```
 
-Images from `ghcr.io/randomcontainers/tesseract` are built in [randomcontainers/tesseract](https://github.com/randomcontainers/tesseract), so name that repository in `--repo` and `--certificate-github-workflow-repository`.
+Images from `ghcr.io/randomcontainers/tesseract` are built in [randomcontainers/tesseract](https://github.com/randomcontainers/tesseract), so use `randomcontainers/tesseract` in `--repo` and `--certificate-github-workflow-repository`.
 
 ## Updates
 
